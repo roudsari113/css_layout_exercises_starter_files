@@ -1,1 +1,76 @@
+/*This applies to everything that will be located in the nav bar*/
+.container {
+  padding-left: 60px;
+  padding-right: 60px;
+}
 
+nav { /*what is nav vs. container?*/
+  height: 80px;
+  background-color: grey;
+  position: fixed
+
+  width: 100%;
+}
+
+nav .icon-img {/*formatting the cat pic in nav bar*/
+  height: 60px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid black;
+}
+
+nav ul {/*formatting the list*/
+  display: inline-block;
+  list-style: none;
+}
+
+nav li {/*formatting the way the links themselves look*/
+  display: inline-block;
+
+}
+
+nav li::after {/*inserting a placeholder between the links*/
+  content: "|";
+  margin-left: 5px;
+}
+
+nav a:hover {/*the way the links show when hovered over*/
+  color: black;
+}
+
+body {/*formatting the entire background for the site*/
+  background: url(../images/outerspace_landscape.jpeg) no-repeat;
+  background-size: cover;
+}
+
+main {/*formatting the background?*/
+  padding-top: 90px;
+  min-width: 1000px;
+}
+
+.box {/*formatting the box around the images*/
+  margin-top: 150px;
+  width: 600px;
+  height: 300px;
+  position: relative;
+  border: 10px dotted green;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spacecat, .spacedog {/*formatting that the two images have in common*/
+  position: absolute;
+  width: 200px;
+}
+
+.spacecat {/*formatting that each image has on its own*/
+  top: -90px;
+  left: -90px;
+}
+
+.spacedog {
+  bottom: -120px;
+  right: -60px;
+}
